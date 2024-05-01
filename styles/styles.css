@@ -1,5 +1,5 @@
 nav {
-  background-color: steelblue;
+  background-color: #476840;
   padding: 10px;
 }
 nav a {
@@ -8,15 +8,38 @@ nav a {
   padding: 20px;
 }
 h1 {
-  color:steelblue
+  color:#6d4875;
+
+
 }
-img {
+main img {
   width: 150px;
   height: auto;
-  border: 1px solid steelblue;
+  border: 1px solid rgb(25, 29, 33);
   padding: 2px;
   box-shadow: 0 0 30px gray;
 }
 p{
-  padding: 10px;
+  padding: 0;
+}
+main {
+  max-width: 840px;
+}
+aside {
+  width: 20rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(176,203,170,.9);
+  background-color: rgba(203,180,170,.2) ;
+  color:#6d4875;
+  text-align: center;
+}
+aside img {
+  width: 200px;
+  height: auto;
+}
+footer {
+  margin-top: 2rem;
+  border-top: 2px  solid #6d4875;
+  text-align:center;
 }
