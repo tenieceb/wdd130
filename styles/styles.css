@@ -42,8 +42,8 @@ aside {
 }
 
 aside h2{
-  position: relative;
-  bottom: -30px;
+  position: absolute;
+  left: 120px;
   color: #c8b3cb;
   text-shadow: 1px 1px 1px #063102;
 }
