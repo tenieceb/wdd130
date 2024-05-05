@@ -15,10 +15,10 @@ body {
     --heading-font:'Josefin Sans', display;
     --paragraph-font: Poppins, sans-serif;
 
-    --nav-background-color: var(--primary-color);
-    --nav-link-color: var(--accent2-color);
-    --nav-hover-link-color: var(--primary-color);
-    --nav-hover-link-background-color: var(--accent2-color);
+    --nav-background-color: #bd7014;
+    --nav-link-color: #35332b;
+    --nav-hover-link-color: #bd7014;
+    --nav-hover-background-color: #35332b;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -104,5 +104,5 @@ nav a:link, nav a:visited {
 
 nav a:hover {
     color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-link-background-color);
+    background-color: var(--nav-hover-background-color);
 }
