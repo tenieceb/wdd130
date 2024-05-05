@@ -39,6 +39,7 @@ main {
 aside {
   width: 20rem;
   text-align: center;
+  position: relative;
 }
 
 aside h2{
