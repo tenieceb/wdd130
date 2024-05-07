@@ -15,7 +15,7 @@
     --nav-hover-background-color: #35332b;
 }
 body{
-    width: 985px
+    width: 1000px;
 }
 
 .hero {
@@ -47,22 +47,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero article {
+    width: 800px;
     padding: 5px;
     border: .5px solid #35332b2e;
     position: absolute;
     right: 0px;
     left: 0px;
-    top: 100px;
+    top: 135px;
+    margin: 0 auto;
     background-color: rgba(249, 234, 217, 0.7);
     text-shadow: .2px .2px 0px var(--primary-color);
     color: var(--accent1-color);
-    text-align: center;
-    
+    text-align: center;    
 }
 
-
 .hero article img {
-    width: 200px;
+    width: 165px;
     float: right;
     padding: 1px;
     box-shadow: 0px 0px 5px #35332b;
@@ -81,9 +81,6 @@ p {
     width: 50px;
     padding: 5px;    
 }
-
-
-
 
 nav a {
     font-family: var(--paragraph-font);
