@@ -40,8 +40,8 @@ main img {
   height: auto;
   border: 1px solid rgb(25, 29, 33);
   padding: 3px;
-  box-shadow: 0 0 10px #476840;
-  margin: .5rem 0 .5rem 2rem
+  box-shadow: 0 0 5px #476840;
+  margin: .5rem 0 6px 8px;
 }
 
 .grid {
@@ -55,7 +55,8 @@ main {
 }
 
 main p{
-  padding: 10px;
+  padding: 10px 0 0 5px ;
+  text-indent: 30px;
 }
 
 
