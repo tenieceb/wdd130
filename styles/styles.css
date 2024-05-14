@@ -29,9 +29,9 @@ nav a {
 
 h1 {
   color:#6d4875;
-  padding: 15px;
+  padding: 1px;
   border-bottom: solid 2px #063102;
-  
+  margin-bottom: 20px;
 }
 
 main img {
@@ -39,9 +39,9 @@ main img {
   width: 200px;
   height: auto;
   border: 1px solid rgb(25, 29, 33);
-  padding: 2px;
+  padding: 3px;
   box-shadow: 0 0 10px #476840;
-  margin: 0 0 2rem 2rem
+  margin: .5rem 0 .5rem 2rem
 }
 
 .grid {
@@ -55,15 +55,17 @@ main {
 }
 
 main p{
-  padding: 25px;
+  padding: 10px;
 }
 
 
 
 aside {
   width: 20rem;
+  height: 95%;
   text-align: center;
   position: relative;
+  align-content: center;
   grid-column: 1/2;
   grid-row: 1/2;
 }
@@ -76,11 +78,13 @@ aside h2{
 }
 
 aside img {
-  width: 200px;
+  width: 250px;
   height: auto;
   box-shadow: 0px 0px 10px #6d4875;
+  margin-bottom: 30px;
 
 }
+
 footer {
   margin-top: 2rem;
   border-top: 2px  solid #6d4875;
