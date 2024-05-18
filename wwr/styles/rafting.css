@@ -110,7 +110,7 @@ h2 {
 }
 
 .history img {
-    width: 180px;
+    width: 150px;
 }
 
 .rafting-images h2{
@@ -120,23 +120,20 @@ h2 {
     text-align: center;
 }
 
-figure {
-    display: grid;
-    column-gap: 10px;
-    column-span: inherit;
-    margin: 0 auto;
+.figures{
+    display: flex;
+    flex: 100%;
+    justify-content: left;
 }
 
-figure img{
-    width: 100%;
-    height: auto;
+figure img {
+    width: 180px;
+
 }
 
 figcaption {
-    grid-row: 3;
     font-family: var(--paragraph-font);
     text-align: center;
-    padding: 3px;
 }
 
 p {
@@ -151,12 +148,11 @@ footer  {
     justify-content: right;
     align-items: flex-end;
     background-color: #bd7014;
-    margin-top: 15px;
 }
 
 footer p {
     color: var(--accent2-color);
-    justify-self: left;
+    
 }
 
 .sociallinks img {
