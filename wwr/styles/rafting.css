@@ -9,10 +9,10 @@
     --heading-font:'Josefin Sans', display;
     --paragraph-font: Poppins, sans-serif;
 
-    --nav-background-color: #bd7014;
-    --nav-link-color: #35332b;
-    --nav-hover-link-color: #bd7014;
-    --nav-hover-background-color: #35332b;
+    --nav-background-color: #35332b ;
+    --nav-link-color: #D5CE92;
+    --nav-hover-link-color: #35332b;
+    --nav-hover-background-color: #bd7014 ;
 }
 
 header {
@@ -21,7 +21,6 @@ header {
     background-color: var(--nav-background-color);
     font-weight: bold;
 }
-
 
 
 header img {
@@ -83,7 +82,7 @@ h2 {
     left: 0px;
     top: 135px;
     margin: 0 auto;
-    background-color: rgba(249, 234, 217, 0.7);
+    background-color: #f9ead9b3;
     text-shadow: .2px .2px 0px var(--primary-color);
     color: var(--accent1-color);
     text-align: center;    
@@ -110,8 +109,11 @@ h2 {
 }
 
 .history img {
-    width: 150px;
+    width: 250px;
+    padding: 1px;
+    box-shadow: 0px 0px 5px #35332b;
 }
+
 
 .rafting-images h2{
     margin: 0 auto;
@@ -120,13 +122,15 @@ h2 {
     text-align: center;
 }
 
-.figures{
+.figures {
     display: flex;
-    justify-content: flex-start;
+    
 }
 
 .figures img {
     width: 180px;
+    padding: 1px;
+    box-shadow: 0px 0px 5px #35332b;
 }
 
 figcaption {
@@ -145,11 +149,11 @@ footer  {
     flex-direction: row;
     justify-content: right;
     align-items: flex-end;
-    background-color: #bd7014;
+    background-color: var(--nav-background-color);
 }
 
 footer p {
-    color: var(--accent2-color);
+    color: #D5CE92;
     
 }
 
@@ -160,8 +164,9 @@ footer p {
 
 nav a {
     font-family: var(--paragraph-font);
-    color: var(--nav-link-color);
+    color: #D5CE92;
     text-decoration: none;
+    font-weight: bold;
     padding: 1rem;
     width:auto;
 }
