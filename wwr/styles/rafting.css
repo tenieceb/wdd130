@@ -148,7 +148,7 @@ footer  {
     text-decoration: none;
     flex-direction: row;
     justify-content: right;
-    align-items: flex-end;
+    align-items: center;
     background-color: var(--nav-background-color);
 }
 
@@ -159,7 +159,6 @@ footer p {
 
 .sociallinks img {
     width: 25px;
-    padding: 5px;
 }
 
 nav a {
