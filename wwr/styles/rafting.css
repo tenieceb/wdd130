@@ -122,13 +122,11 @@ h2 {
 
 .figures{
     display: flex;
-    flex: 100%;
-    justify-content: left;
+    justify-content: flex-start;
 }
 
-figure img {
+.figures img {
     width: 180px;
-
 }
 
 figcaption {
