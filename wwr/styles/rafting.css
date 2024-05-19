@@ -74,7 +74,7 @@ h2 {
 }
 
 .hero article {
-    width: 800px;
+    width: auto;
     padding: 5px;
     border: .5px solid #35332b2e;
     position: absolute;
@@ -100,6 +100,7 @@ h2 {
     display: grid;
     justify-items:center;
     column-gap: 15px;
+    padding-bottom: 25px;
 
 }
 
@@ -110,7 +111,7 @@ h2 {
 
 .history img {
     width: 250px;
-    padding: 1px;
+    padding: 2px var(--accent1-color);
     box-shadow: 0px 0px 5px #35332b;
 }
 
@@ -122,16 +123,21 @@ h2 {
     text-align: center;
 }
 
+figure{
+    padding: 0px;
+    margin: 0px;
+}
+
 .figures {
     display: flex;
-    
+    justify-content: space-evenly;
+    padding-bottom: 50px;
 }
 
 .figures img {
     width: 180px;
-    padding: 1px;
+    padding: 1px var(--accent1-color);
     box-shadow: 0px 0px 5px #35332b;
-    just
 }
 
 figcaption {
@@ -140,6 +146,7 @@ figcaption {
 }
 
 p {
+    padding-left: 10px;
     font-family: var(--paragraph-font);
     color: var(--secondary-color);
 }
@@ -148,17 +155,20 @@ footer  {
     display: flex;
     text-decoration: none;
     flex-direction: row;
-    justify-content: right;
     align-items: center;
     background-color: var(--nav-background-color);
 }
 
 footer p {
+    flex: 1;
+    justify-content: center;
     color: #D5CE92;
-    
+    text-indent: 10px;
 }
 
 .sociallinks img {
+    flex: 2;
+    justify-content: flex-end;
     width: 25px;
 }
 
