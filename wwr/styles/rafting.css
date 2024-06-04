@@ -38,7 +38,7 @@ align-items: center;
 
 
 body{
-    width: 900px;
+    width: 1000px;
 }
 
 .hero {
@@ -352,12 +352,13 @@ width:auto;
 }
 
 table {
+float: right;
 border-collapse: collapse;
 border: 2px solid rgb(140 140 140);
 font-family: "poppins";
 font-size: 0.9rem;
 letter-spacing: 1px;
-width: auto;
+width: 300px;
 margin: 0 auto;
 }
 
@@ -375,7 +376,7 @@ text-align: center;
 th,
 td {
     border: 1px solid var(--accent2-color);
-padding: 8px;
+padding: 5px;
 color: var(--accent2-color);
 }
 
