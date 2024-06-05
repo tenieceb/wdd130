@@ -49,6 +49,7 @@ body{
 h1, h2, h3, h4, h5, h6, caption {
     font-family: var(--heading-font);
     color: var(--secondary-color);
+    margin: 10px;
 }
 
 h1 {
@@ -71,9 +72,10 @@ text-shadow: 2px 2px 0px var(--primary-color);
 background-color:rgba(53, 51, 43, .50);
 font-size: 60px;
 text-align: center;
+margin: 0 auto;
 }
 
-.hero a, table a {
+.hero a, table a, .current-adventures a {
 background-color: #35332be5;
 padding: 3px;
 border: 1px dotted var(--primary-color);
@@ -130,7 +132,7 @@ background-color: var(--accent3-color);
 
 
 .history h2, .current-adventures h2, .current-adventures-trips h2 {
-grid-column: 1fr ;
+grid-column: span;
 grid-row: 1;
 }
 
@@ -139,6 +141,26 @@ width: 250px;
 border: 1px solid;
 box-shadow: 0px 0px 5px #35332b;
 }
+
+.history h2 {
+    grid-column: 1/4;
+}
+.history img {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.hcolumn1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.hcolumn2 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+
 
 .current-adventures img {
     grid-row: 3/7;
@@ -194,44 +216,44 @@ p, label, input  {
 padding: 5px 10px 5px 10px;
 font-family: var(--paragraph-font);
 color: var(--secondary-color);
+margin: 0;
 }
 
 .contactus {
 display: grid;
 float:left;
 grid-template-columns: auto;
-grid-template-rows: auto;
+grid-template-rows: 1fr 1fr 1fr;
 gap: 5px;
 margin: 5px;
 justify-content: center;
 align-items: center;
+
 }
 
 .contactus h2 {
-grid-column: 1fr;
+grid-column: 1/3;
 grid-row: 1;
 text-align: center;
 }
 
-.location {
-grid-column: 1/3;
-grid-row: 2/4;
+.location, .phone,.email{
+grid-column: 1;
+display:grid;
+max-width: max-content;
+max-height: min-content;
+
+} 
+
+.email {
+    grid-column: 2;
 }
 
-.phone {
-grid-column: 1/3;
-grid-row: 4/6;
-}
-
-.email{
-grid-column: 3/5;
-grid-row: 4/6;
-}
-
-.google-map {
-    grid-column: 3/5;
+iframe {
+    grid-column: 2;
+    grid-row: 2;
     width: 300px;
-    grid-row: 2/4;
+
 }
 
 
@@ -249,6 +271,10 @@ text-align: center;
 border:solid .5px rgba(53, 51, 43, .50);
 padding: 4px;
 background-color: rgba(69, 66, 53, 0.021);;
+}
+
+.send-message{
+    width: 400px;
 }
 
 
@@ -272,39 +298,14 @@ grid-template-columns: 1fr 2fr;
 grid-template-rows: auto;
 gap:2px;
 justify-content: center;
+margin: 0;
 }
-
-.form-item2 {
-    display: grid;
-    grid-template-columns:auto;
-    grid-template-rows: auto;
-}
-
-.form-item2 label {
-    grid-column: 2;
-    grid-row: 2/5;
-}
-
-label {
-    grid-column: 1;
-    text-align: right;
-}
-
-input {
-    grid-column: 2;
-}
-
-.mpurpose p {
-grid-column: 1/3;
-grid-row: 1;
-text-align: center;
-} 
 
 
 textarea {
-grid-column: 1/4;
-grid-row: 2;
-width: 300px;
+grid-column: 2/4;
+grid-row: 1/4;
+width: auto;
 }
 
 input[type="checkbox"], input[type="radio"] {
@@ -312,6 +313,11 @@ width: 15px;
 height: 15px;
 align-self: center;
 justify-self: center;
+}
+
+.messageinput label, .mpurpose p {
+ grid-row: 1/4;
+ justify-self: center;
 }
 
 button { 
@@ -403,7 +409,7 @@ div{
     grid-template-columns: auto;
     grid-template-rows: auto;
     background-color: var(--accent3-color);
-    }
+}
 
 .current-adventures-trips {
     grid-column: 1/6;
